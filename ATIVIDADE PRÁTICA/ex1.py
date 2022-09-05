@@ -25,9 +25,11 @@ Elabore um programa em Python que:
 
 
 print("Bem vindo a Loja do Jhonatan Medeiros")
+#Pegando valor e quantidade do usuario
 valor = float(input("Entre com valor do produto: "))
 qtd = int(input("Entre com valor do quantidade: "))
 
+#Definindo qual será o desconto com base na qtd
 if 0 <= qtd < 4:
     desconto = 0
     print("O valor com desconto foi: R$ {}".format(desconto))
@@ -38,6 +40,7 @@ elif 20 <= qtd < 100:
 else:
     desconto = 0.1
 
+#Calculos
 semDesconto = valor * qtd
 comDesconto = semDesconto - (semDesconto * desconto)
 print("O valor sem desconto foi : R$ {:.2f}".format(semDesconto))
